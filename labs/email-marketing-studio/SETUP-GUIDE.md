@@ -251,7 +251,22 @@ my-email-studio/
 - [ ] 12. Resume and fork
 - [ ] 13. Automatic review
 - [ ] 14. Package your studio kit
-- [ ] 15. (add when I reach it)
+- [ ] 15. Stretch — What customers love
+
+---
+
+## Words you'll see (lab glossary)
+
+| Word | Meaning | In my studio |
+|---|---|---|
+| Session | One conversation with Claude Code. `/exit` ends it; `claude` starts a new one | Every BUILD → FRESH → CHECK loop |
+| Commit | A saved snapshot of files in Git; you can always go back | e.g. `1c8ecd6` brand voice |
+| Plugin | A package of skills, commands, hooks and connections installed in one go | `marketing` plugin (8 skills) |
+| Skill | Saved instructions Claude follows when called with `/name` or when the task fits | `campaign-plan`, `email-sequence`, my `personalize` |
+| MCP server | A connection that gives Claude tools from another service | Resend, in `.mcp.json` (Step 9) |
+| Hook | A small script Claude Code runs at a set moment (e.g. just before a tool runs); it can block the action | `send-guard.mjs` (Step 10) |
+| Practice mode | Resend's tools connected to a pretend email server on my own computer | Step 11 practice launch — no real email leaves |
+| Fresh session | A new conversation that doesn't remember the old one — a fair checker | The CHECK part of every step |
 
 ---
 

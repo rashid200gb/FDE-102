@@ -67,7 +67,7 @@ Am I in E:\FDE\my-email-studio? If yes, confirm it is a git repository.
 
 ---
 
-## Part 3 — Step 1: find skills others have made (before building)
+## Part 3 — Step 1 "Look before you build": find skills others have made
 
 Paste this prompt into Claude Code:
 
@@ -84,7 +84,12 @@ I'm setting up an email marketing studio in this folder. Before I build anything
    - Use these: the two sources you recommend for writing campaigns and sending email, and why.
    - Avoid these: two results you would not trust, and why.
    - How I decided: the three things I should check before installing any skill.
+
+Don't install anything yet.
 ```
+
+> In plain words: a skill is like an app for Claude. Before you build one, look in the app store.
+> Download counts can be faked, so also check who made it.
 
 - Approve each `npx skills find ...` command — they only **search**, nothing is installed.
 - If npx asks `Ok to proceed? (y)`, type `y`.
@@ -135,12 +140,32 @@ my-email-studio/
 
 ---
 
-## Part 5 — Steps still to do
+## Part 5 — Lab progress (Email Studio Lab, 15 steps)
 
+**Setup**
 - [x] Install Node, Git, Claude Code
 - [x] Create `my-email-studio` and `git init`
-- [ ] Step 1 — find skills, write `notes/skills-i-chose.md`
-- [ ] Later steps — add them here as I do them
+
+**Part 1 · Plan and write**
+- [ ] 1. Look before you build
+- [ ] 2. Set up your studio
+- [ ] 3. Your brand voice
+- [ ] 4. Plan the campaign
+- [ ] 5. Practice leads
+- [ ] 6. Email rule and sequence
+- [ ] 7. Fresh-eyes review
+- [ ] 8. Your own skill
+
+**Part 2 · Send safely**
+- [ ] 9. Connect Resend
+- [ ] 10. The safety guard
+- [ ] 11. Practice launch
+
+**Part 3 · Work like a team**
+- [ ] 12. Resume and fork
+- [ ] 13. Automatic review
+- [ ] 14. Package your studio kit
+- [ ] 15. (add when I reach it)
 
 ---
 

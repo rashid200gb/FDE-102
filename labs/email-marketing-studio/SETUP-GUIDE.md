@@ -143,6 +143,17 @@ git config --global user.email "rashid200gb@gmail.com"
 - `.gitignore` — keeps `.claude/settings.local.json` (my personal settings) and system junk out of Git.
 - One Git commit.
 
+**What I saw when I did it (28 Oct 2026)**
+- `marketing` plugin v1.2.0 installed with 8 skills: `campaign-plan`, `email-sequence`, `draft-content`,
+  `content-creation`, `brand-review`, `competitive-brief`, `performance-report`, `seo-audit`.
+  For this studio: `campaign-plan` + `email-sequence` (writing) and `brand-review` (check before sending).
+- Skills only load in a **new session**: `/exit`, then `claude` again.
+- Warning "18 MCP servers need authentication" = connectors bundled with the plugin (Slack etc.).
+  **Do not authenticate them** — not needed; choose *Disable* or ignore. Only Resend is used, at Step 9.
+- Permission prompt "Read outside the working directories" (Claude reading `C:\Users\XAD\.claude\plugins`):
+  choose **"Yes, but ask again next time"** — never the blanket "keep allowing any reads".
+- `/plugin` opens on *Discover* (all plugins); use the **Installed** tab to check mine.
+
 **To make the plugin load:** do what Claude says — usually `/exit`, then start `claude` again in the same folder,
 and approve the plugin/marketplace prompt. Check with `/plugin` that `marketing` is listed.
 

@@ -95,6 +95,14 @@ Don't install anything yet.
 - If npx asks `Ok to proceed? (y)`, type `y`.
 - Approve creating `notes/skills-i-chose.md`, then check it with: `Show me notes/skills-i-chose.md`
 
+**Expected result (`notes/skills-i-chose.md`):**
+- *Use these* — writing: `anthropics/knowledge-work-plugins` (`campaign-plan`, `email-sequence`), official, ~32.9K stars;
+  sending: `resend/resend-skills` (`resend`, `resend-cli`, plus `email-best-practices`, `react-email`), Resend's official repo.
+  Runner-up: `coreyhaines31/marketingskills` (popular, but one person's collection).
+- *Avoid these* — `caffeinelabs/skills` and `mbfinotti/sales-skills`: tens of thousands of installs but only 2–3 stars,
+  new or unknown publishers — a sign install counts may be inflated.
+- *How I decided* — who publishes it; do GitHub stars match the install count; what its `SKILL.md` tells the agent to do.
+
 **Before installing ANY skill, check these three things:**
 1. **Publisher** — official (`anthropics`, `resend`) beats an unknown account.
 2. **Trust** — GitHub stars and recent updates.

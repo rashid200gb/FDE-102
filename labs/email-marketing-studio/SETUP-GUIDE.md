@@ -162,6 +162,30 @@ installing the knowledge-work-plugins marketplace; check with `/plugin` (marketi
 **To make the plugin load:** do what Claude says — usually `/exit`, then start `claude` again in the same folder,
 and approve the plugin/marketplace prompt. Check with `/plugin` that `marketing` is listed.
 
+## Part 3c — Step 3 "Your brand voice"
+
+**How every step works:** 1 BUILD (paste prompt) → 2 FRESH (`/exit`, then `claude`) → 3 CHECK (paste the check prompt; a fresh Claude tests work it didn't build) → 4 DONE (answer its questions, tick Done).
+
+BUILD prompt:
+
+```text
+Interview me about my brand so you can write our brand voice guide. Ask one question at a time and wait for my answer. Ask at most six questions.
+
+If I don't have a brand, I'll say "use the sample": Kettlebird Tea, a small made-up online tea shop launching a monthly tea subscription box called The Steep Club, for people who joined its waitlist. Even with the sample, still ask me every question. I'll make up the answers, because practising the interview is the point.
+
+When you have enough, write brand/voice.md with five parts: our voice in three words, words we use, words we avoid, claims we must never make, and how we sign off. Then add the line @brand/voice.md to CLAUDE.md so it loads in every session.
+```
+
+**Lesson learned:** the first time, Claude "played both sides" and answered the six questions itself. The lab wants ME to answer — I asked it to redo the interview one question at a time.
+
+**My answers (Kettlebird sample):** two-person loose-leaf shop, ~1,200 waitlist; voice = warm, knowledgeable never showy, quietly funny;
+use steep/brew/cup/loose-leaf/"Steepers"; avoid elevate, curated, indulge, journey, game-changer, exclusive, luxury, superfood, detox, artisanal;
+no ALL CAPS, max one "!" per email, no emoji in subject lines; never: health claims, organic/fair trade unless certified,
+"best in the world"/comparisons, fake urgency, farm visits; sign-off "Happy steeping, Mei & Tom, Kettlebird Tea" + P.S. brewing tip.
+
+**Result:** commit `1c8ecd6` "Add Kettlebird Tea brand voice guide and load it from CLAUDE.md".
+**Test it loads:** in a fresh session ask "Without opening any file, how should Kettlebird emails sign off, and which words must we avoid?" — it answered correctly from CLAUDE.md → @brand/voice.md (exam topic 3.1, @import).
+
 ---
 
 ## Part 4 — The finished studio (target)
@@ -211,7 +235,7 @@ my-email-studio/
 **Part 1 · Plan and write**
 - [x] 1. Look before you build
 - [x] 2. Set up your studio (28 Oct 2026)
-- [ ] 3. Your brand voice
+- [x] 3. Your brand voice (commit 1c8ecd6; CHECK prompt still to run)
 - [ ] 4. Plan the campaign
 - [ ] 5. Practice leads
 - [ ] 6. Email rule and sequence

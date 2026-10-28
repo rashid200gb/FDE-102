@@ -154,6 +154,11 @@ git config --global user.email "rashid200gb@gmail.com"
   choose **"Yes, but ask again next time"** — never the blanket "keep allowing any reads".
 - `/plugin` opens on *Discover* (all plugins); use the **Installed** tab to check mine.
 
+**Claude's answer on loading the plugin:** nothing extra in the same session once skills show in its list.
+In general: restart Claude Code in the folder (plugins load at session start); say yes to trusting the folder /
+installing the knowledge-work-plugins marketplace; check with `/plugin` (marketing listed and enabled) or type
+`/marketing:` to see its commands. Anyone who copies the folder gets the same prompt, because the setting is saved in the project.
+
 **To make the plugin load:** do what Claude says — usually `/exit`, then start `claude` again in the same folder,
 and approve the plugin/marketplace prompt. Check with `/plugin` that `marketing` is listed.
 
@@ -204,8 +209,8 @@ my-email-studio/
 - [x] Create `my-email-studio` and `git init`
 
 **Part 1 · Plan and write**
-- [ ] 1. Look before you build
-- [ ] 2. Set up your studio
+- [x] 1. Look before you build
+- [x] 2. Set up your studio (28 Oct 2026)
 - [ ] 3. Your brand voice
 - [ ] 4. Plan the campaign
 - [ ] 5. Practice leads

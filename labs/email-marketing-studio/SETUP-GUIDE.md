@@ -110,6 +110,44 @@ Don't install anything yet.
 
 ---
 
+## Part 3b — Step 2 "Set up your studio"
+
+Paste this into Claude Code (or click **Copy** on the lab page):
+
+```text
+Let's set up my email studio in this folder.
+
+1. Install Anthropic's official marketing plugin for this project only, by running these two commands:
+   claude plugin marketplace add anthropics/knowledge-work-plugins --scope project
+   claude plugin install marketing@knowledge-work-plugins --scope project
+2. Create four folders: brand, leads, campaigns and notes.
+3. Write a CLAUDE.md for the studio in plain English. Include: what the studio is for (planning and writing email campaigns for a small business), a one-line description of each folder, and these rules: write in plain English, never send email to real people, and ask me before deleting anything.
+4. Create a .gitignore that ignores .claude/settings.local.json and system files like .DS_Store.
+5. Commit everything with a clear message.
+
+Then tell me what I have to do so the plugin loads.
+```
+
+**Before running it (fresh Git install only)** — Git must know who I am, or the commit fails with
+"Author identity unknown". Run once in PowerShell:
+
+```powershell
+git config --global user.name "Rashid Mahmood Sajid"
+git config --global user.email "rashid200gb@gmail.com"
+```
+
+**What it builds**
+- Plugin installed at **project scope**: recorded in this project's settings, so anyone who clones the studio gets it — not installed for every project on my laptop.
+- Folders `brand/`, `leads/`, `campaigns/`, `notes/` (Git does not track empty folders, so Claude may add a small placeholder file in each).
+- `CLAUDE.md` — the studio's rules, read every session.
+- `.gitignore` — keeps `.claude/settings.local.json` (my personal settings) and system junk out of Git.
+- One Git commit.
+
+**To make the plugin load:** do what Claude says — usually `/exit`, then start `claude` again in the same folder,
+and approve the plugin/marketplace prompt. Check with `/plugin` that `marketing` is listed.
+
+---
+
 ## Part 4 — The finished studio (target)
 
 ```text

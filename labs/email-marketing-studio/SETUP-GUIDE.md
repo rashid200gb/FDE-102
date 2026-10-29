@@ -25,6 +25,7 @@ claude --version   # any version
 | Node.js | Install the **LTS** version from https://nodejs.org |
 | Git | `winget install --id Git.Git -e --source winget` (or download from https://git-scm.com/download/win, keep all defaults) |
 | Claude Code | `npm install -g @anthropic-ai/claude-code` |
+| GitHub CLI (`gh`) | `winget install --id GitHub.cli -e`, reopen terminal, then `gh auth login` (GitHub.com → HTTPS → Yes → browser) and check `gh auth status` |
 
 > **Important:** after installing anything, **close the terminal and open a new one**.
 > An old window does not see newly installed programs.
@@ -36,6 +37,15 @@ claude --version   # any version
 - **Still failing?** Check `Test-Path "C:\Program Files\Git\cmd\git.exe"`. If it prints `True`,
   Git is installed but not on PATH — reinstall and keep the option
   "Git from the command line and also from 3rd-party software".
+
+
+### GitHub setup (done 29 Oct 2026)
+
+- **Claude GitHub App** — installed on my account, *Only select repositories* → `rashid200gb/FDE-102`.
+  Add a repo here only when a lab step needs it; never switch to "All repositories". Don't touch the Danger zone.
+- **GitHub CLI** v2.103.3 — installed, logged in as `rashid200gb` (HTTPS).
+- Needed later for `/install-github-app` (Claude GitHub Actions, likely Step 13). That command also adds a
+  `CLAUDE_CODE_OAUTH_TOKEN` secret and workflow files — only run it when the lab says so.
 
 ---
 

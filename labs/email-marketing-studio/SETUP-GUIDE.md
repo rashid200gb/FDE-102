@@ -3,6 +3,7 @@
 My own record of how I set up the Email Marketing Studio lab with Claude Code on Windows,
 so I can repeat it on any computer.
 
+- **Full lab text (all 15 steps, every BUILD and CHECK prompt):** [LAB-STEPS.md](LAB-STEPS.md)
 - **Starter repo:** https://github.com/mjunaidca/email-marketing-studio (README + .gitignore only)
 - **My machine:** Windows, PowerShell, project folder `E:\FDE\my-email-studio`
 - **Tools used:** Node.js 22+, Git for Windows 2.56, Claude Code v2.1.220 (Claude Pro, Sonnet 5)
